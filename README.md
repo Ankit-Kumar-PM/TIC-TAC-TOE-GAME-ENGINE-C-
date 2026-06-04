@@ -49,11 +49,4 @@ If you want to pull this code down and try running it yourself, you just need a 
 
 ---
 
-## 🛠️ Known Issues & Future Fixes (Beginner's Corner!)
-
-Look, I know this code is far from perfect! Since it was my Day 5 milestone, there are a few bugs and messy areas I left in on purpose to remind me of where I started. If you are looking through my code, you might notice:
-* **The Input Bug:** In `selmark()`, I wrote `cin >> p1, p2;`. I learned later that the comma operator doesn't work the way I thought it did for streaming inputs!
-* **The Infinite Loop Risk:** I used recursion (`move1()` calling `move1()`) to handle invalid inputs, which can crash the stack if someone spams wrong keys. I plan to rewrite this using a `while` loop instead.
-* **Incomplete Game Loop:** The snippet uploaded cuts off right at `move2()` and is missing the final winning/tie checking conditions. 
-
 *If you are an experienced dev and have some constructive roasting or tips on how I can refactor this cleanly, please open an issue or drop a pull request. I am trying to learn as much as possible!*
