@@ -1,52 +1,58 @@
-# 🎮 Terminal Tic-Tac-Toe (My First C++ Project!)
+# Tic-Tac-Toe Game Engine (C++)
 
-Hey there! I am a computer science student, and this is the very first actual project I have ever built. I wrote this entire program from scratch after learning C++ for just 5 days straight. Instead of just doing boring textbook exercises, I wanted to try building a real working game to see if I could actually pull it off. 
+A console-based Tic-Tac-Toe game built from scratch using Object-Oriented Programming in C++.
 
-It is a completely text-based, two-player Tic-Tac-Toe game that runs directly inside your computer terminal. Writing this code was a massive milestone for me because it forced me to figure out how to structure a program using objects instead of just writing everything in one giant `main()` function.
+## Features
 
----
+* Two-player gameplay
+* Custom player names
+* Marker selection (X or O)
+* Dynamic game board updates
+* Win condition detection
+* Draw detection
+* Occupied square validation
+* Restart functionality
+* Exit functionality
 
-## ✨ Features
+## Concepts Practiced
 
-* **Custom Usernames:** You can type in your actual names instead of just being Player A or Player B.
-* **Smart Token Assigning:** Player 1 picks their preferred icon ('X' or 'O'), and the program automatically gives the remaining icon to Player 2.
-* **Dynamic Grid Render:** It draws a fresh 3x3 game board in the console every time someone takes a turn.
-* **Basic Error Checking:** It tries to stop you if you try to pick a number that isn't on the board or if you try to steal a spot that someone else already took.
-* **Shortcut Keys:** You can quickly reset the game loop or completely quit out of the application right from the character selection screen.
+* Classes and Objects
+* Constructors
+* Member Functions
+* Arrays (2D Matrix)
+* Conditional Logic
+* Switch Statements
+* Input Validation
+* Game State Management
+* Object-Oriented Design
 
----
+## How It Works
 
-## 🧠 What I Learned (The Hard Way)
+1. Players enter their names.
+2. Player 1 selects a marker (X or O).
+3. Players take turns selecting positions on the board.
+4. The game checks for winning combinations after every move.
+5. If a player completes a winning row, column, or diagonal, the game announces the winner.
+6. If all positions are filled without a winner, the game ends in a draw.
 
-Because I only had under a week of coding knowledge under my belt when I sat down to write this, I ran into a ton of walls. Building this taught me:
-* How to actually use **C++ Classes** and public/private access modifiers without breaking my code.
-* Tracking data in a grid structure using **2D Arrays** (`char matrix`).
-* Using **Switch cases** to route player inputs to the exact right spot on the board.
-* Handling conditional fallback logic using nested `if/else` checks.
+## Technologies
 
----
+* C++
+* Standard Library (`iostream`)
 
-## 💻 How to Get It Running
+## Future Improvements
 
-If you want to pull this code down and try running it yourself, you just need a standard C++ compiler installed on your computer.
+* Single-player mode against AI
+* Score tracking system
+* Improved board validation
+* Cleaner win-checking algorithm
+* Dynamic board sizes (4x4, 5x5, etc.)
+* Better user interface
 
-1. **Grab the repository:**
-   ```bash
-   git clone https://github.com
-   ```
-2. **Navigate to the directory:**
-   ```bash
-   cd your-repo-name
-   ```
-3. **Build the executable:**
-   ```bash
-   g++ main.cpp -o tictactoe
-   ```
-4. **Launch the game:**
-   ```bash
-   ./tictactoe
-   ```
+## Author
 
----
+Ankit Kumar
 
-*If you are an experienced dev and have some constructive roasting or tips on how I can refactor this cleanly, please open an issue or drop a pull request. I am trying to learn as much as possible!*
+## Notes
+
+This project was created as part of my early C++ learning journey to practice Object-Oriented Programming, problem-solving, and game logic implementation. It represents one of my first complete interactive applications built entirely from scratch.
